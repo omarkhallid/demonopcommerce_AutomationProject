@@ -22,7 +22,7 @@ public class Hooks {
 
         // 3) Configurations
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10 , TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(7 , TimeUnit.SECONDS);
 
         // 4) Navigation to Website
         driver.navigate().to("https://demo.nopcommerce.com/");
@@ -32,7 +32,7 @@ public class Hooks {
 
     @After
     public static void CloseBrowser() throws InterruptedException {
-        Thread.sleep(3000);
+        Thread.sleep(6000);
         driver.quit();
     }
 }
