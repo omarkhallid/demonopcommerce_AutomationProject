@@ -12,4 +12,5 @@ public class P04_Search {
         List<WebElement> searchedProducts= Hooks.driver.findElements(By.xpath("//div[@class=\"details\"]//a[@href=\"/asus-n551jk-xo076h-laptop\"]"));
         return searchedProducts;
     }
+
 }
